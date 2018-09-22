@@ -1,7 +1,5 @@
 package com.linhnv.tikitest.model;
 
-import java.util.List;
-
 /**
  * Created by linhnv on 22/09/2018.
  */

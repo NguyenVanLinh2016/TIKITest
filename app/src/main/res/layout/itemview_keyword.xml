@@ -13,9 +13,9 @@
         android:id="@+id/text_view_keyword"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="aaaaa"
         android:textColor="@color/colorWhite"
         android:paddingLeft="@dimen/item_text_padding"
         android:paddingRight="@dimen/item_text_padding"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textSize="14dp"/>
 </LinearLayout>

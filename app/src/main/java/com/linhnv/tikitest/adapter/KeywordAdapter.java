@@ -31,25 +31,8 @@ public class KeywordAdapter extends RecyclerView.Adapter<KeywordViewHolder> {
 
     @Override
     public void onBindViewHolder(KeywordViewHolder vHolder, int position) {
-        //bind data
-
         Keyword data = getItem(position);
-        vHolder.bindData(data, position);
-
-        /*ViewGroup.MarginLayoutParams marginParams = (ViewGroup.MarginLayoutParams) vHolder.viewRoot.getLayoutParams();
-        if (position == 0){
-            marginParams.setMargins(ThemeUtils.dpToPx(vHolder.txtKeyword.getContext(), 12),
-                    0,
-                    ThemeUtils.dpToPx(vHolder.txtKeyword.getContext(), 6),
-                    0);
-        }
-        if (position == keywordList.size()-1){
-            marginParams.setMargins(ThemeUtils.dpToPx(vHolder.txtKeyword.getContext(), 6),
-                    0,
-                    ThemeUtils.dpToPx(vHolder.txtKeyword.getContext(), 12),
-                    0);
-        }*/
-
+        vHolder.bindData(data);
     }
 
     @Override

@@ -3,13 +3,10 @@ package com.linhnv.tikitest.adapter;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.linhnv.tikitest.R;
 import com.linhnv.tikitest.model.Keyword;
-import com.linhnv.tikitest.utils.AppUtils;
-import com.linhnv.tikitest.utils.ThemeUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,11 +29,8 @@ public class KeywordViewHolder extends RecyclerView.ViewHolder {
         ButterKnife.bind(this, itemView);
     }
 
-    public void bindData(Keyword data, int position) {
-
-       //split
+    public void bindData(Keyword data) {
         String text = breakLongLine(data.getKeyword().trim());
-
         txtKeyword.setText(text);
         GradientDrawable gradientDrawable = (GradientDrawable) viewRoot.getBackground();
         gradientDrawable.setColor(data.getColor());

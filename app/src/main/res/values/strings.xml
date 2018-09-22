@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TIKITest</string>
+    <string name="keyword_title">Từ khoá hot</string>
 </resources>
